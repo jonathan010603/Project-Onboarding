@@ -1,0 +1,42 @@
+@import './scss/_mixins.scss';
+@import './scss/_variables.scss';
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    @include size(100vw, 100vh);
+    @include flex(flex-start, center, row);
+}
+
+.content {
+    @include size(82.1333%, 82.2660%);
+    @include flex(center, flex-start, column);
+    margin-top: 34px;
+    background-color: red;
+}
+
+.image {
+    @include size(97.4025%, 44.9101%);
+    background-color: blue;
+}
+
+.text {
+    @include size(97.0779%, 15.4191%);
+    margin-top: 7px;
+    background-color: yellow;
+}
+
+.pagination {
+    @include size(22.7272%, 1.7964%);
+    margin-top: 64px;
+    background-color: green;
+}
+
+.buttons {
+    @include size(100%, 17.8143%);
+    margin-top: 63px;
+    background-color: purple;
+}
