@@ -9,3 +9,14 @@
     width: $w;
     height: $h;
 }
+
+@mixin background($url) {
+    background-image: url($url);
+}
+
+@mixin font($size, $weight, $lineHeight, $family: inherit) {
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $lineHeight;
+    font-family: $family;
+}

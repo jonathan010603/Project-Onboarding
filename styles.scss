@@ -1,11 +1,12 @@
 @import './scss/_mixins.scss';
 @import './scss/_variables.scss';
 
+
 @font-face {
     font-family: 'Poppins';
     font-style: normal;
     src: url('https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrJJfecg.woff2') format('woff2');
-  }
+}
 
 body, html {
     font-family: 'poppins';
@@ -16,52 +17,103 @@ body, html {
 main {
     @include size(100vw, 100vh);
     @include flex(flex-start, center, row);
-}
+    
+    .content {
+        @include size(82.1333%, 82.2660%);
+        @include flex(center, flex-start, column);
+        margin-top: 34px;
+        max-width: 350px;
+        min-width: 283px;
+        min-height: 500px;
+        
+        .image {
+            @include size(97.4025%, 44.9101%);
+            background-position: center;
+            background-repeat: no-repeat;
+        }
 
-.content {
-    @include size(82.1333%, 82.2660%);
-    @include flex(center, flex-start, column);
-    margin-top: 34px;
-    background-color: red;
-}
+        .text {
+            @include size(97.0779%, 15.4191%);
+            @include flex(center, space-between, column);
+            text-align: center;
+            margin-top: 7px;
+        
+            .title {
+                @include font(24px, 600, 30.94px);
+            }
+        
+            .subtitle {
+                @include font(18px, 400, 23.2px);
+            }
+        }
+        
+        .pagination {
+            @include size(22.7272%, 1.7964%);
+            @include flex(center, space-between, row);
+            margin-top: 64px;
+        
+            .point {
+                @include size(12px, 12px);
+                transition: all ease-in-out 0.2s;
+                border-radius: 50%;
+                background-color: white;
+                border: 1px solid black;
+                cursor: pointer;
+            }
+        
+            .selected {
+                background-color: $primary;
+                border-color: transparent;
+            }
+        }
 
-.image {
-    @include size(97.4025%, 44.9101%);
-    background-color: blue;
-}
+        .buttons {
+            @include size(100%, 17.8143%);
+            @include flex(center, space-between, column);
+            @include font(18px, 500, 23.2px);
+            transition: all ease-in-out 0.2s;
+            margin-top: 63px;
+            
+            .next {
+                @include size(100%, 45.3781%);
+                @include flex(center, center, column);
+                box-shadow: 0px 4px 10px #A1C3FC;
+                background-color: $primary;
+                color: white;
+                text-align: center;
+                cursor: pointer;
 
-.text {
-    @include size(97.0779%, 15.4191%);
-    @include flex(center, space-between, column);
-    text-align: center;
-    margin-top: 7px;
-    background-color: yellow;
-}
+                &:hover {
+                    background-color: $primary_hover;
+                }
+            }
+            
+            .skip {
+                @include size(12.3376%, 19.3277%);
+                color: $primary;
+                cursor: pointer;
 
-.pagination {
-    @include size(22.7272%, 1.7964%);
-    @include flex(center, space-between, row);
-    margin-top: 64px;
-    background-color: green;
-
-    .point {
-        @include size(17.1428%, 100%);
-        border-radius: 50%;
-        background-color: white
+                &:hover {
+                    color: $primary_hover;
+                }
+            }
+            
+            .hide {
+                display: none;
+            }
+        }
     }
+    
 }
 
-.buttons {
-    @include size(100%, 17.8143%);
-    @include flex(center, space-between, column);
-    margin-top: 63px;
-    background-color: purple;
+.bg0 {
+    @include background('./img/page1.svg');
 }
 
-.next {
-    @include size(100%, 45.3781%);
-    @include flex(center, center, column);
-    text-align: center;
-    color: white;
-    background-color: $primary;
+.bg1 {
+    @include background('./img/page2.svg');
+}
+
+.bg2 {
+    @include background('./img/page3.svg');
 }
