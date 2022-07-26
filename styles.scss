@@ -30,6 +30,7 @@ main {
             @include size(97.4025%, 44.9101%);
             background-position: center;
             background-repeat: no-repeat;
+            transition: all ease-in 0.1s;
         }
 
         .text {
@@ -100,6 +101,20 @@ main {
             
             .hide {
                 display: none;
+            }
+
+            .next, .skip {
+                -webkit-tap-highlight-color: transparent;
+                -webkit-touch-callout: none;
+                -webkit-user-select: none;
+                -khtml-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+
+                &:focus {
+                    outline: none !important;
+                }
             }
         }
     }

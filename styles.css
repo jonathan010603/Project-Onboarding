@@ -34,6 +34,7 @@ main .content .image {
   height: 44.9101%;
   background-position: center;
   background-repeat: no-repeat;
+  transition: all ease-in 0.1s;
 }
 main .content .text {
   width: 97.0779%;
@@ -120,6 +121,17 @@ main .content .buttons .skip:hover {
 }
 main .content .buttons .hide {
   display: none;
+}
+main .content .buttons .next, main .content .buttons .skip {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+main .content .buttons .next:focus, main .content .buttons .skip:focus {
+  outline: none !important;
 }
 
 .bg0 {
