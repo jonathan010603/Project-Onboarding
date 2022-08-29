@@ -1,5 +1,5 @@
 # Project-Onboarding
-Developed on the 3rd sprint of my Compass.UOL Front-end Internship
+Developed on the 3rd sprint of my Compass.UOL Front-end Internship.
 
 check this out: https://jonathan010603.github.io/TeamProjectForm/
 
