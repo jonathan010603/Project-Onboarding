@@ -1,7 +1,5 @@
 # Project-Onboarding
 
-check this out: https://jonathan010603.github.io/TeamProjectForm/
-
 - Developed on the 3rd Sprint of my Compass.UOL Internship
 - Based on this Figma layout https://www.figma.com/community/file/1103572209069282096
 
